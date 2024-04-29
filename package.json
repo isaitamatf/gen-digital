@@ -1,16 +1,63 @@
 {
   "name": "web-evaluation",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "author": {
+    "name": "Isaac Batista"
+  },
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/int3rnal-us3r/NHdlYi1ldmFsdWF0aW9u"
+  },
   "private": true,
   "scripts": {
-    "start": "web-dev-server --open index.html --node-resolve --watch --port 4001",
+    "start": "set PORT=4001 && react-scripts start",
     "start:api": "json-server --watch db/db.json --port 4002",
-    "test": "web-test-runner \"src/**/*.test.js\" --coverage --node-resolve"
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "devDependencies": {
     "@open-wc/testing": "^3.0.0-next.5",
     "@web/dev-server": "^0.4.1",
     "@web/test-runner": "^0.18.0",
-    "json-server": "^1.0.0-alpha.16"
+    "json-server": "^1.0.0-alpha.16",
+    "webpack": "^5.88.2"
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.39",
+    "@types/react": "^18.2.17",
+    "@types/react-dom": "^18.2.7",
+    "bootstrap": "^5.3.3",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.10.2",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "sass": "^1.64.1",
+    "typescript": "^4.9.5",
+    "usehooks-ts": "^2.9.1",
+    "web-vitals": "^2.1.4"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
