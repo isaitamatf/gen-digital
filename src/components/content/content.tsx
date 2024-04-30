@@ -1,5 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { NumericInput } from "../../components";
 
 export type ContentProps = {
   tabSelected: number;
@@ -9,17 +10,7 @@ const Content: React.FC<ContentProps> = ({ tabSelected }) => {
   const showContentSelected = () =>  {
     switch (tabSelected) {
       case 0:
-        return (
-          <div className="form-group">
-            <div className="row">
-              <h1 className="text-center">Numeric Input Component</h1>
-            </div>
-            <div className="row">
-              <label>Enter Number: </label>
-              <input className="form-control" type="text" />
-            </div>
-          </div>
-        );
+        return <NumericInput />;
       case 1:
         return (
           <div className="form-group">

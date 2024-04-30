@@ -3,3 +3,13 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+.c-numeric-input--error,
+.c-numeric-input--error:focus {
+  border: solid 2px #d9534f;
+  outline: none;
+}
+
+.c-numeric-input--valid {
+  border: solid 2px #5cb85c;
+}
