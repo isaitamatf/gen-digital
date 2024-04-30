@@ -91,11 +91,16 @@ const RelativeDate: React.FC = () => {
       </div>
       <div className="row">
         <label>Input Date:</label>
-        <input type="date" value={inputDate} onChange={onChange} />
+        <input
+          data-testid="input-date"
+          type="date"
+          value={inputDate}
+          onChange={onChange}
+        />
       </div>
       <div className="row">
         <label>Output:</label>
-        <span>{outputMessage}</span>
+        <span data-testid="output-message">{outputMessage}</span>
       </div>
       <div className="row">
         <button
