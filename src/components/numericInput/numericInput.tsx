@@ -84,7 +84,7 @@ const NumericInput: React.FC = () => {
   const inputError = isValid === "false" ? "c-numeric-input--error" : "";
 
   return (
-    <div className="form-group">
+    <div className="form-group" data-testid="numeric-input">
       <div className="row">
         <h1 className="text-center">Numeric Input Component</h1>
       </div>
